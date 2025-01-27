@@ -28,6 +28,13 @@ body {
 
 .menu {
     display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu li {
@@ -35,9 +42,21 @@ body {
     margin: 0 50px;
 }
 
-.menu li a {
+.botonNav {
     text-decoration: none;
     color: #fff;
+}
+
+.contactaNav {
+    display: flex;
+    padding: 15px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    background: #DFD6B5;
+    color: #000;
+    text-decoration: none;
 }
 
 .bannerInicio {
