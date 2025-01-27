@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -154,17 +154,22 @@
             <div class="difDiv">
                 <div class="iconoDif"><img src="./img/dif1.svg" alt=""></div>
                 <h3 class="difH3">Equipo calificado</h3>
-                <p class="iconosText">Nuestro equipo tiene las características que el mercado pide. Desarrollamos soluciones tecnológicas, trabajamos con software de punta y hacemos inteligencia de negocios.</p>
+                <p class="iconosText">Nuestro equipo tiene las características que el mercado pide. Desarrollamos
+                    soluciones tecnológicas, trabajamos con software de punta y hacemos inteligencia de negocios.</p>
             </div>
             <div class="difDiv">
                 <div class="iconoDif"><img src="./img/dif2.svg" alt=""></div>
                 <h3 class="difH3">Tecnología y datos</h3>
-                <p class="iconosText">Hacemos nuestros propios desarrollos en programación y automatizaciones. Hacemos análisis de datos para generar insights y tomar decisiones orientadas al rendimiento. Somos expertos en reporting.</p>
+                <p class="iconosText">Hacemos nuestros propios desarrollos en programación y automatizaciones. Hacemos
+                    análisis de datos para generar insights y tomar decisiones orientadas al rendimiento. Somos expertos
+                    en reporting.</p>
             </div>
             <div class="difDiv">
                 <div class="iconoDif"><img src="./img/dif3.svg" alt=""></div>
                 <h3 class="difH3">Elegimos a nuestros clientes</h3>
-                <p class="iconosText">Nuestro filosofía es elegir con quién trabajar. Buscamos ser un socio para crecer. Nuestros equipos de trabajo son chicos, porque la comunicación en los proyectos debe ser fluida y eficiente.</p>
+                <p class="iconosText">Nuestro filosofía es elegir con quién trabajar. Buscamos ser un socio para crecer.
+                    Nuestros equipos de trabajo son chicos, porque la comunicación en los proyectos debe ser fluida y
+                    eficiente.</p>
             </div>
         </div>
     </section>
@@ -176,44 +181,131 @@
         <div class="equipoSup">
             <div class="miembroEquipo">
                 <img src="./img/perfil.png" class="perfil" alt="">
-                <h3 class="nombreMiembro">Bautista Veaute</h3>
-                <h5>CEO</h5>
-                <p class="descripcionMiembro">Análisis de mercados internacionales</p>
+                <div>
+                    <h3 class="nombreMiembro">Bautista Veaute</h3>
+                    <h5>CEO</h5>
+                    <p class="descripcionMiembro">Analista de datos con orientación al marketing de rendimiento</p>
+                </div>
             </div>
             <div class="miembroEquipo">
                 <img src="./img/perfil.png" class="perfil" alt="">
-                <h3 class="nombreMiembro">Manuel Alvarez</h3>
-                <h5>CTO</h5>
-                <p class="descripcionMiembro">Estrategias de marketing</p>
+                <div>
+                    <h3 class="nombreMiembro">Manuel Alvarez</h3>
+                    <h5>CTO</h5>
+                    <p class="descripcionMiembro">Senior Media Paid Analyst</p>
+                </div>
             </div>
         </div>
         <div class="miembroEquipo">
             <img src="./img/perfil.png" class="perfil" alt="">
-            <h3 class="nombreMiembro">Leonardo Rizza</h3>
-            <h5>Head of Development</h5>
-            <p class="descripcionMiembro">Soluciones tecnológicas avanzadas</p>
+            <div>
+                <h3 class="nombreMiembro">Leonardo Rizza</h3>
+                <h5>Head of Development</h5>
+                <p class="descripcionMiembro">Programador especializado en la creación de bots, integraciones eficientes
+                    y
+                    automatizaciones orientadas al marketing.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="seccionContacto">
-        <h2 class="tituloSeccion">¿Tienes un proyecto en mente?</h2>
+        <div class="ContactoTitleDiv">
+            <h2 class="tituloContacto">¿Algún proyecto en mente?</h2>
+            <div>
+                <h4 class="subtituloContacto">Contactanos</h4>
+            </div>
+        </div>
         <form class="formularioContacto">
-            <input type="text" placeholder="Tu Nombre" required class="inputTexto">
-            <input type="text" placeholder="Nombre de la empresa" required class="inputTexto">
-            <input type="email" placeholder="Email" required class="inputCorreo">
-            <input type="tel" placeholder="Teléfono" class="inputTelefono">
-            <textarea placeholder="Mensaje" class="inputMensaje"></textarea>
+            <div class="inputDiv2">
+                <div style="margin: 0" class="inputDiv">
+                    <label for="labelForm">Tu Nombre</label>
+                    <input type="text" placeholder="Ingresá tu nombre completo" required class="inputTexto">
+                </div>
+                <div class="inputDiv">
+                    <label for="labelForm">Nombre de tu empresa</label>
+                    <input type="text" placeholder="Ingresá el nombre de tu proyecto" required class="inputTexto">
+                </div>
+            </div>
+            <div class="inputDiv2">
+                <div style="margin: 0" class="inputDiv">
+                    <label for="labelForm">Email</label>
+                    <input type="email" placeholder="Ingresá tu correo electrónico" required class="inputCorreo">
+                </div>
+                <div style="margin: 0" class="inputDiv">
+                    <label for="labelForm">Teléfono</label>
+                    <input type="tel" placeholder="Ingresá tu número de teléfono" class="inputTelefono">
+                </div>
+            </div>
+            <div style="margin: 0">
+                <textarea placeholder="Queremos saber qué tenés en mente" class="inputMensaje"></textarea>
+            </div>
             <button type="submit" class="botonEnviar">Enviar</button>
         </form>
     </section>
 
+    <section>
+        <h2 class="tituloContacto2">¿Algún proyecto en mente?</h2>
+        <div class="redesContacto">
+            <a href="#" class="enlaceRedSocial"><img src="./img/Linkedin.svg" alt="Logo de la empresa"></a>
+            <a href="#" class="enlaceRedSocial"><img src="./img/instagram2.svg" alt="Logo de la empresa"></a>
+            <a href="#" class="enlaceRedSocial"><img src="./img/facebook.svg" alt="Logo de la empresa"></a>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2 class="faq-title">Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <button class="faq-question">
+                ¿Cómo garantizan que las campañas generen ventas reales?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Al realizar estrategias de publicidad basadas en análisis de datos, podemos garantizar el éxito de
+                    nuestro trabajo. Nuestro modelo de negocio se basa en que tu empresa facture más para que nosotros
+                    ganemos más.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                ¿Qué diferencia a Bi.Lab de otras agencias?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Nuestra dedicación al análisis de datos, tecnología innovadora y resultados comprobados.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                ¿Cómo miden los resultados de las campañas?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Medimos los resultados a través de herramientas avanzadas de análisis y métricas clave como ROI,
+                    conversiones y engagement.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                ¿En cuánto tiempo puedo esperar resultados?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Los resultados pueden variar dependiendo de la estrategia, pero generalmente empezamos a ver impacto
+                    en las primeras semanas.</p>
+            </div>
+        </div>
+    </section>
+
     <footer class="piePagina">
-        <p class="textoPie">Síguenos en nuestras redes</p>
-        <a href="#" class="enlaceRedSocial">Instagram</a>
-        <a href="#" class="enlaceRedSocial">Facebook</a>
-        <a href="#" class="enlaceRedSocial">LinkedIn</a>
+        <img src="./img/logo.svg" class="logoFooter" alt="Logo de la empresa">
         <p class="derechosReservados">&copy; 2025 Bi Lab - Todos los derechos reservados.</p>
+        <div class="redesFooter">
+            <a href="#" class="enlaceRedSocial2"><img src="./img/linkedin33.svg" alt="Logo de la empresa"></a>
+            <a href="#" class="enlaceRedSocial1"><img src="./img/instagram33.svg" alt="Logo de la empresa"></a>
+            <a href="#" class="enlaceRedSocial1"><img src="./img/fb33.svg" alt="Logo de la empresa"></a>
+        </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>
