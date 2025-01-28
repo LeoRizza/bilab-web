@@ -791,7 +791,7 @@ body {
     line-height: 160%;
     overflow: hidden; /* Oculta contenido mientras colapsa/expande */
     height: 0; /* Altura inicial cerrada */
-    transition: height 0.5s ease;
+    transition: height 0.4s ease;
 }
 
 .faq-answer p {
