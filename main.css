@@ -647,8 +647,8 @@ body {
 }
 
 .inputMensaje {
-    width: 100%;
-    padding: 15px 0;
+    width: -webkit-fill-available;
+    padding: 15px 20px;
     margin: 10px 0;
     border: none;
     border-radius: 30px;
