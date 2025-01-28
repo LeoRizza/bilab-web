@@ -631,6 +631,7 @@ body {
 .inputTexto,
 .inputCorreo,
 .inputTelefono {
+    font-family: "Archivo", serif;
     width: 27.5vw;
     padding: 15px;
     margin: 10px 0;
@@ -638,6 +639,8 @@ body {
     border-radius: 30px;
     background: #363636;
     color: #fff;
+    font-size: 20px;
+
 }
 
 .inputTexto,
@@ -647,19 +650,28 @@ body {
 }
 
 .inputMensaje {
+    font-family: "Archivo", serif;
     width: -webkit-fill-available;
     padding: 15px 20px;
     margin: 10px 0;
     border: none;
     border-radius: 30px;
     background: #363636;
+    font-size: 20px;
     color: #fff;
     height: 170px;
+    resize: none; /* Desactiva el redimensionamiento manual */
+    overflow: hidden; /* Oculta el scroll */
+    transition: border-color 0.3s ease;
 }
 
 .inputMensaje::placeholder {
     font-family: "Archivo", serif;
     padding-left: 15px;
+}
+
+.inputMensaje:focus {
+    border-color: #a35bff;/* Cambia el color del borde al hacer clic */
 }
 
 .labelForm {
