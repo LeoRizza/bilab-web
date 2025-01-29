@@ -961,9 +961,19 @@ body {
     display: none;
 }
 
-
+.menuToggle2 {
+    display: none;
+    background-color: transparent;
+    border: none;
+    margin-top: 5vh;
+    width: 24px;
+}
 /* Responsividad */
 @media (max-width: 990px) {
+
+    .menuToggle2 {
+        display: flex;
+    }
 
     .contactaNav {
         display: none;
@@ -1004,6 +1014,8 @@ body {
         opacity: 0;
         overflow: hidden;
         transition: opacity 0.3s ease, height 0.3s ease;
+        display: flex;
+        flex-direction: column;
     }
 
     .menu {
