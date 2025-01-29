@@ -41,9 +41,26 @@ const textarea = document.getElementById('mensaje');
 
 
 // 🔹 hamburgesa
-const menuToggle = document.querySelector(".menuToggle");
+/* const menuToggle = document.querySelector(".menuToggle");
 const menuContainer = document.querySelector(".menuContainer");
 
 menuToggle.addEventListener("click", () => {
     menuContainer.classList.toggle("active");
+});
+ */
+
+const menuToggle = document.querySelector(".menuToggle");
+const menuToggle2 = document.querySelector(".menuToggle2");
+const menuContainer = document.querySelector(".menuContainer");
+
+// 🔹 Evento para abrir el menú
+menuToggle.addEventListener("click", () => {
+    menuContainer.classList.add("active");
+    menuToggle.style.display = "none";  // 🔥 Oculta el botón de abrir
+});
+
+// 🔹 Evento para cerrar el menú
+menuToggle2.addEventListener("click", () => {
+    menuContainer.classList.remove("active");
+    menuToggle.style.display = "block";  // 🔥 Muestra el botón de abrir
 });

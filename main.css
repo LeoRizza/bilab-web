@@ -972,7 +972,8 @@ body {
 @media (max-width: 990px) {
 
     .menuToggle2 {
-        display: flex;
+        display: block;
+        margin: 5vh auto;
     }
 
     .contactaNav {
@@ -1008,7 +1009,7 @@ body {
         top: 60px;
         right: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.9);
+        background: black;
         text-align: center;
         padding: 20px 0;
         opacity: 0;
@@ -1064,6 +1065,7 @@ body {
         opacity: 1;
         overflow: visible;
         padding: 20px 0;
+        top: 12vh;
     }
 
     /* OTROS */
@@ -1117,6 +1119,7 @@ body {
 
     .serviciosLogos {
         display: none;
+        z-index: 100;
         justify-content: center;
     }
 
