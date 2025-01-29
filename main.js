@@ -34,12 +34,13 @@ faqItems.forEach(item => {
 const textarea = document.getElementById('mensaje');
 
 // Evento para ajustar la altura automáticamente
-textarea.addEventListener('inputMensaje', function () {
+/* textarea.addEventListener('inputMensaje', function () {
     this.style.height = 'auto'; // Restablece la altura para recalcular
     this.style.height = this.scrollHeight + 'px'; // Ajusta la altura al contenido
-});
+}); */
 
-// Hamburgesa
+
+// 🔹 hamburgesa
 const menuToggle = document.querySelector(".menuToggle");
 const menuContainer = document.querySelector(".menuContainer");
 
