@@ -7,13 +7,27 @@ body {
     color: #fff;
 }
 
+.cuerpoPagina {
+    position: relative;
+}
+
+
 /* Encabezado */
 .barraNavegacion {
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    padding: 40px 5vw;
+    padding: 20px 5vw;
+}
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
 }
 
 .bannerH1 {
@@ -120,7 +134,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 6vw;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -130,17 +144,24 @@ body {
     }
 }
 
+.containerServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
 .serviciosLogos {
-    width: 40vw;
+    width: 100%;
     display: flex;
     height: 100%;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
 .serviciosContent {
-    width: 40vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -154,6 +175,10 @@ body {
     margin-top: 20px;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.lineasContainerMobile {
+    display: none;
 }
 
 
@@ -177,13 +202,18 @@ body {
 .serviciosLogosContainer {
     display: flex;
     align-items: center;
+    width: 100%;
+}
+
+.logosSubDiv {
+    width: 100%;
 }
 
 .tituloServicios {
     position: absolute;
     top: 5vw;
     border-radius: 24px;
-    background: linear-gradient(to bottom right, #BC65DE, #5241B0);
+    background: linear-gradient(to bottom right, #BC65DE 40%, #5241B0);
     /* Gradiente de izquierda a derecha */
     color: #fff;
     text-align: center;
@@ -330,7 +360,17 @@ body {
     line-height: 23px;
 }
 
+.serviciosTitleMobile {
+    color: #FFF;
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
 .servicioTitle {
+    font-family: "Quicksand", serif;
     color: #FFF;
     font-size: 32px;
     font-weight: 700;
@@ -530,6 +570,10 @@ body {
     width: 40vw;
 }
 
+.miembroEquipo2 {
+    display: none;
+}
+
 .miembroEquipo h5 {
     color: #FFF;
     text-align: center;
@@ -660,8 +704,10 @@ body {
     font-size: 20px;
     color: #fff;
     height: 170px;
-    resize: none; /* Desactiva el redimensionamiento manual */
-    overflow: hidden; /* Oculta el scroll */
+    resize: none;
+    /* Desactiva el redimensionamiento manual */
+    overflow: hidden;
+    /* Oculta el scroll */
     transition: border-color 0.3s ease;
 }
 
@@ -671,7 +717,8 @@ body {
 }
 
 .inputMensaje:focus {
-    border-color: #a35bff;/* Cambia el color del borde al hacer clic */
+    border-color: #a35bff;
+    /* Cambia el color del borde al hacer clic */
 }
 
 .labelForm {
@@ -693,14 +740,99 @@ body {
     cursor: pointer;
 }
 
+/* FAQ */
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Quicksand", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.faq-item {
+    background-color: #363636;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    font-family: "Quicksand", serif;
+    font-size: 16px;
+    background-color: #363636;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.faq-icon {
+    font-size: 1.5rem;
+    color: #A35BFF;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    line-height: 1.6;
+    display: none;
+    color: #979797;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.4s ease;
+}
+
+.faq-answer p {
+    margin: 15px 0;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+    height: auto;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(0);
+}
+
+.faq-icon:hover {
+    color: white;
+}
+
 /* Pie de página */
 .piePagina {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 17vh 0;
-    padding: 0 6vh;
+    padding: 25vh 4vw 15vh 4vw;
+    position: relative;
+    width: inherit;
 }
 
 .enlaceRedSocial1 {
@@ -749,84 +881,106 @@ body {
     margin-bottom: 15vh;
 }
 
-/* FAQ */
+/* eclipse */
 
-.faq {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.faq-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.faq-item {
-    background-color: #363636;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-
-.faq-question {
-    background-color: transparent;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 15px 20px;
+.eclipses {
+    position: absolute;
     width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+
+}
+
+.eclipsesDiv {
+    position: absolute;
+    height: 100%;
+    top: -25%;
+    pointer-events: none;
+}
+
+.eclipse1 {
+    position: absolute;
+    bottom: 8vw;
+    left: -18vw;
+    width: 1100px;
+    height: 1100px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(145, 90, 255, 0.40) 10%, rgba(255, 255, 255, 0.00));
+}
+
+.eclipse2 {
+    position: absolute;
+    bottom: -20vw;
+    /* 🔥 Ajusta la altura del círculo */
+    right: -50vw;
+    /* 🔥 Lo centra con respecto a la pantalla */
+    width: 1100px;
+    height: 1100px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(145, 90, 255, 0.40) 10%, rgba(255, 255, 255, 0.00));
+    transform: translate(50%, 0);
+
+}
+
+.derechos {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.faq-icon {
-    font-size: 1.5rem;
-    color: #A35BFF;
-    transition: transform 0.3s ease;
-}
-
-.faq-answer {
-    padding: 0 20px;
-    line-height: 1.6;
-    display: none;
-    color: #979797;
-    font-size: 16px;
+    font-size: 20.236px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    overflow: hidden; /* Oculta contenido mientras colapsa/expande */
-    height: 0; /* Altura inicial cerrada */
-    transition: height 0.4s ease;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.faq-answer p {
-    margin: 15px 0;
-}
-
-.faq-item.open .faq-answer {
-    display: block;
-    height: auto;
-}
-
-.faq-item.open .faq-icon {
-    transform: rotate(0);
-    /* Ajusta el ícono al abrir */
-}
-
-.faq-icon:hover {
-    color: white;
+.imagenSocio2 {
+    display: none;
 }
 
 
 /* Responsividad */
-@media (max-width: 768px) {
+@media (max-width: 990px) {
+
+    .imagenSocio {
+        display: none;
+    }
+
+    .imagenSocio2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /*HEADER*/
+    .menuToggle {
+        display: block;
+        /* Muestra el botón hamburguesa */
+    }
+
+    .menuContainer {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menuContainer.active {
+        display: block;
+        /* Muestra el menú cuando se active */
+    }
+
+    /* OTROS */
     .tituloPrincipal {
         font-size: 2rem;
     }
@@ -839,7 +993,147 @@ body {
         width: 100px;
     }
 
-    .miembroEquipo {
-        max-width: 90%;
+
+    .contenedorDif {
+        flex-direction: column;
+    }
+
+    .eclipsesDiv {
+        display: none;
+    }
+
+    .equipoSup {
+        flex-direction: column;
+    }
+
+    .bannerInicio {
+        height: 100%;
+        top: 0;
+    }
+
+    .containerServicios {
+        flex-direction: column;
+    }
+
+    .lineasContainer {
+        display: none;
+    }
+
+    .lineasContainerMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .serviciosLogos {
+        display: none;
+    }
+
+    .tituloServicios {
+        position: relative;
+        top: 0;
+    }
+
+    .servicios {
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+
+    .serviciosContent {
+        text-align: center;
+    }
+
+    .servicioText {
+        text-align: left;
+    }
+
+    .subtituloContacto {
+        font-size: 48px;
+    }
+
+    .serviciosLogosContainer {
+        flex-direction: column;
+    }
+
+    .bloqueServicios {
+        width: 92vw;
+        height: 117px;
+    }
+
+    .tituloPartners {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .seccionEquipo {
+        margin: 0 4vw;
+    }
+
+    .equipoSup {
+        width: 100vw;
+        position: relative;
+    }
+
+    .equipos3 {
+        display: none;
+    }
+
+    .miembroEquipo2 {
+        display: flex;
+        width: 100%;
+    }
+
+    .formularioContacto {
+        width: 92vw;
+    }
+
+    .inputDiv2 {
+        flex-direction: column;
+    }
+
+    .inputTexto,
+    .inputTelefono,
+    .inputCorreo {
+        width: auto;
+    }
+
+    .tituloContacto2 {
+        font-size: 36px;
+        margin: 5vh 0 3vh 0;
+    }
+
+    .ContactoTitleDiv {
+        font-size: 36px;
+    }
+
+    .redesSection {
+        margin: 0 4vw;
+    }
+
+    .faq {
+        margin: 0 4vw;
+    }
+
+    .faq-question {
+        padding: 32px;
+    }
+
+    .faq-item {
+        border-radius: 30px;
+    }
+
+    .piePagina {
+        padding: 0;
+        padding-top: 80px;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .derechos {
+        order: 40;
+    }
+
+    .derechosReservados {
+        margin: 0;
     }
 }

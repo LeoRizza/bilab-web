@@ -24,12 +24,14 @@
 </head>
 
 <body class="cuerpoPagina">
+
     <header class="encabezado">
         <nav class="barraNavegacion">
             <div class="logo">
                 <img src="./img/logo.svg" alt="Logo de la empresa">
             </div>
-            <div>
+            <button class="menuToggle">&#9776;</button>
+            <div class="menuContainer">
                 <ul class="menu">
                     <li><a href="#home" class="botonNav">Home</a></li>
                     <li><a href="#servicios" class="botonNav">Servicios</a></li>
@@ -38,101 +40,165 @@
                 </ul>
             </div>
         </nav>
-        <div class="bannerInicio">
-            <div class="bannerLogo">
-                <img class="logoSvg" src="./img/Vector.svg" alt="">
-                <h2 class="bannerBilab">bi·lab</h2>
-            </div>
-            <div class="bannerContent">
-                <h1 class="bannerH1">Escalamos ventas y generamos leads, a partir de estrategias basadas en datos.</h1>
-                <a href="#contacto" class="btnCTA">Contáctanos</a>
-            </div>
-        </div>
     </header>
-
+    <div class="bannerInicio">
+        <div class="bannerLogo">
+            <img class="logoSvg" src="./img/Vector.svg" alt="">
+            <h2 class="bannerBilab">bi·lab</h2>
+        </div>
+        <div class="bannerContent">
+            <h1 class="bannerH1">Escalamos ventas y generamos leads, a partir de estrategias basadas en datos.</h1>
+            <a href="#contacto" class="btnCTA">Contáctanos</a>
+        </div>
+    </div>
     <section id="services" class="seccionServicios">
 
         <div class="servicios">
             <div class="tituloServicios">
                 <h4 class="tituloSeccionServicios">Nuestro Servicio</h4>
             </div>
-            <div class="serviciosContent">
-                <h3 class="servicioTitle">Creamos campañas automatizadas que generan resultados.</h3>
-                <p class="servicioText">En bi.Lab nuestra prioridad es hacerte facturar más. Creemos en desentrañar lo
-                    que mueve a tu negocio
-                    para entender qué haces y, más importante, por qué lo haces.<br><br> A partir de ahí, diseñamos
-                    estrategias basadas en datos para crear campañas que no solo suenan bien, sino que venden de verdad.
-                    Después, nos metemos en la trinchera: optimizamos tu operación, afinamos cada interacción con tus
-                    clientes y nos aseguramos de que cada lead se convierta en resultado.</p>
-            </div>
-            <div class="serviciosLogos">
-                <div class="lineasContainer">
-                    <div class="lineasDiv">
-                        <p>Inteligencia<br> de Negocios</p><img src="./img/Line 2.svg" alt="linea">
-                    </div>
-                    <div class="lineasDiv">
-                        <p>Estrategia<br> Publicitaria</p><img src="./img/Line 2.svg" alt="linea">
-                    </div>
-                    <div class="lineasDiv">
-                        <p>Operación</p><img src="./img/Line 2.svg" alt="linea">
-                    </div>
+            <div class="containerServicios">
+                <div class="serviciosContent">
+                    <h3 class="servicioTitle">Creamos campañas automatizadas que generan resultados.</h3>
+                    <p class="servicioText">En bi.Lab nuestra prioridad es hacerte facturar más. Creemos en desentrañar
+                        lo
+                        que mueve a tu negocio
+                        para entender qué haces y, más importante, por qué lo haces.<br><br> A partir de ahí, diseñamos
+                        estrategias basadas en datos para crear campañas que no solo suenan bien, sino que venden de
+                        verdad.
+                        Después, nos metemos en la trinchera: optimizamos tu operación, afinamos cada interacción con
+                        tus
+                        clientes y nos aseguramos de que cada lead se convierta en resultado.</p>
                 </div>
-                <div class="serviciosLogosContainer">
-                    <div class="logosSubDiv contenedorBloqueDerecho">
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios1 bloqueServiciosExt bloqueServicios">
-                                <img src="./img/service1.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Data e insights <br> de los consumidores</p>
-                            </div>
-                        </div>
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios2 bloqueServiciosExt bloqueServicios">
-                                <img src="./img/service3.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Funnels de ventas</p>
-                            </div>
-                        </div>
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios2 bloqueServiciosExt bloqueServicios">
-                                <img src="./img/service6.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Conversiones</p>
-                            </div>
-                        </div>
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios3 bloqueServiciosExt bloqueServicios">
-                                <img src="./img/service8.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Atención al Cliente</p>
-                            </div>
+                <div class="lineasContainerMobile">
+                    <h4 class="serviciosTitleMobile">Inteligencia de Negocios</h4>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios1 bloqueServiciosExt bloqueServicios">
+                            <img src="./img/service1.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Data e insights <br> de los consumidores</p>
                         </div>
                     </div>
-                    <div class="logosSubDiv">
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios1 bloqueServicios">
-                                <img src="./img/service2.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Qué vendemos <br>Por qué vendemos</p>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios1 bloqueServicios">
+                            <img src="./img/service2.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Qué vendemos <br>Por qué vendemos</p>
+                        </div>
+                    </div>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios1 bloqueServicios">
+                            <img src="./img/service49.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Kick off</p>
+                        </div>
+                    </div>
+                    <h4 class="serviciosTitleMobile">Estrategia Publicitaria</h4>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios2 bloqueServiciosExt bloqueServicios">
+                            <img src="./img/service3.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Funnels de ventas</p>
+                        </div>
+                    </div>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios2 bloqueServiciosExt bloqueServicios">
+                            <img src="./img/service6.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Conversiones</p>
+                        </div>
+                    </div>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios2 bloqueServicios">
+                            <img src="./img/service5.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Generación de <br> leads</p>
+                        </div>
+                    </div>
+                    <h4 class="serviciosTitleMobile">Operación</h4>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios3 bloqueServiciosExt bloqueServicios">
+                            <img src="./img/service8.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Atención al Cliente</p>
+                        </div>
+                    </div>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios3 bloqueServicios">
+                            <img src="./img/service7.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Automatización de <br> procesos</p>
+                        </div>
+                    </div>
+                    <div class="contenedorBloqueServicios">
+                        <div class="bloqueServicios3 bloqueServicios">
+                            <img src="./img/service49.svg" alt="Descripción del ícono" class="icono" />
+                            <p class="servicioLogosText">Cierre de Ventas</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="serviciosLogos">
+                    <div class="lineasContainer">
+                        <div class="lineasDiv">
+                            <p>Inteligencia<br> de Negocios</p><img src="./img/Line 2.svg" alt="linea">
+                        </div>
+                        <div class="lineasDiv">
+                            <p>Estrategia<br> Publicitaria</p><img src="./img/Line 2.svg" alt="linea">
+                        </div>
+                        <div class="lineasDiv">
+                            <p>Operación</p><img src="./img/Line 2.svg" alt="linea">
+                        </div>
+                    </div>
+                    <div class="serviciosLogosContainer">
+                        <div class="logosSubDiv contenedorBloqueDerecho">
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios1 bloqueServiciosExt bloqueServicios">
+                                    <img src="./img/service1.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Data e insights <br> de los consumidores</p>
+                                </div>
+                            </div>
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios2 bloqueServiciosExt bloqueServicios">
+                                    <img src="./img/service3.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Funnels de ventas</p>
+                                </div>
+                            </div>
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios2 bloqueServiciosExt bloqueServicios">
+                                    <img src="./img/service6.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Conversiones</p>
+                                </div>
+                            </div>
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios3 bloqueServiciosExt bloqueServicios">
+                                    <img src="./img/service8.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Atención al Cliente</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios1 bloqueServicios">
-                                <img src="./img/service49.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Kick off</p>
+                        <div class="logosSubDiv">
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios1 bloqueServicios">
+                                    <img src="./img/service2.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Qué vendemos <br>Por qué vendemos</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios2 bloqueServicios">
-                                <img src="./img/service5.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Generación de <br> leads</p>
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios1 bloqueServicios">
+                                    <img src="./img/service49.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Kick off</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios3 bloqueServicios">
-                                <img src="./img/service7.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Automatización de <br> procesos</p>
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios2 bloqueServicios">
+                                    <img src="./img/service5.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Generación de <br> leads</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contenedorBloqueServicios">
-                            <div class="bloqueServicios3 bloqueServicios">
-                                <img src="./img/service49.svg" alt="Descripción del ícono" class="icono" />
-                                <p class="servicioLogosText">Cierre de Ventas</p>
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios3 bloqueServicios">
+                                    <img src="./img/service7.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Automatización de <br> procesos</p>
+                                </div>
+                            </div>
+                            <div class="contenedorBloqueServicios">
+                                <div class="bloqueServicios3 bloqueServicios">
+                                    <img src="./img/service49.svg" alt="Descripción del ícono" class="icono" />
+                                    <p class="servicioLogosText">Cierre de Ventas</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -144,6 +210,7 @@
     <section id="partners" class="seccionSocios">
         <h4 class="tituloPartners">Trabajamos con</h4>
         <img src="./img/herramientas.svg" alt="Herramientas" class="imagenSocio">
+        <img src="./img/herramientas vertical.svg" alt="Herramientas" class="imagenSocio2">
     </section>
 
     <section id="diferencias" class="seccionDif">
@@ -178,7 +245,23 @@
         <div class="tituloEquipoDiv">
             <h2 class="tituloEquipo">Quiénes Somos</h2>
         </div>
-        <div class="equipoSup">
+        <div class="miembroEquipo miembroEquipo2">
+            <img src="./img/perfil.png" class="perfil" alt="">
+            <div>
+                <h3 class="nombreMiembro">Bautista Veaute</h3>
+                <h5>CEO</h5>
+                <p class="descripcionMiembro">Analista de datos con orientación al marketing de rendimiento</p>
+            </div>
+        </div>
+        <div class="miembroEquipo miembroEquipo2">
+            <img src="./img/perfil.png" class="perfil" alt="">
+            <div>
+                <h3 class="nombreMiembro">Manuel Alvarez</h3>
+                <h5>CTO</h5>
+                <p class="descripcionMiembro">Senior Media Paid Analyst</p>
+            </div>
+        </div>
+        <div class="equipoSup equipos3">
             <div class="miembroEquipo">
                 <img src="./img/perfil.png" class="perfil" alt="">
                 <div>
@@ -196,7 +279,7 @@
                 </div>
             </div>
         </div>
-        <div class="miembroEquipo">
+        <div class="miembroEquipo miembroEquipo2">
             <img src="./img/perfil.png" class="perfil" alt="">
             <div>
                 <h3 class="nombreMiembro">Leonardo Rizza</h3>
@@ -243,8 +326,8 @@
         </form>
     </section>
 
-    <section>
-        <h2 class="tituloContacto2">¿Algún proyecto en mente?</h2>
+    <section class="redesSection">
+        <h2 class="tituloContacto2">Conectá con nosotros</h2>
         <div class="redesContacto">
             <a href="#" class="enlaceRedSocial"><img src="./img/Linkedin.svg" alt="Logo de la empresa"></a>
             <a href="#" class="enlaceRedSocial"><img src="./img/instagram2.svg" alt="Logo de la empresa"></a>
@@ -298,13 +381,23 @@
 
     <footer class="piePagina">
         <img src="./img/logo.svg" class="logoFooter" alt="Logo de la empresa">
-        <p class="derechosReservados">&copy; 2025 Bi Lab - Todos los derechos reservados.</p>
+        <div class="derechos">
+            <p class="derechosReservados">&copy; 2025</p>
+            <p class="derechosReservados">Todos los derechos reservados.</p>
+        </div>
         <div class="redesFooter">
             <a href="#" class="enlaceRedSocial2"><img src="./img/linkedin33.svg" alt="Logo de la empresa"></a>
             <a href="#" class="enlaceRedSocial1"><img src="./img/instagram33.svg" alt="Logo de la empresa"></a>
             <a href="#" class="enlaceRedSocial1"><img src="./img/fb33.svg" alt="Logo de la empresa"></a>
         </div>
+        <div class="eclipsesDiv">
+            <div class="eclipses">
+                <div class="eclipse1">&nbsp;</div>
+                <div class="eclipse2">&nbsp;</div>
+            </div>
+        </div>
     </footer>
+
     <script src="./main.js"></script>
 </body>
 
