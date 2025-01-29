@@ -1048,7 +1048,7 @@ body {
 
 
     .menuContainer.active {
-        height: 100vh;
+        height: 90vh;
         opacity: 1;
         overflow: visible;
         padding: 20px 0;
