@@ -590,10 +590,6 @@ body {
     width: 40vw;
 }
 
-.miembroEquipo2 {
-    display: none;
-}
-
 .miembroEquipo h5 {
     color: #FFF;
     text-align: center;
@@ -991,6 +987,22 @@ body {
 /* Responsividad */
 @media (max-width: 990px) {
 
+    .carouselMobile {
+        display: flex;
+        width: 100vw;
+    }    
+
+    .miembroEquipo {
+        width: 60vw;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .miembroEquipo3 {
+        display: none;
+    }
+
     .redesFooter {
         display: none;
     }
@@ -1224,16 +1236,6 @@ body {
 
     .equipos3 {
         display: none;
-    }
-
-    .miembroEquipo2 {
-        display: flex;
-        width: 100%;
-    }
-
-    .miembroEquipo3 {
-        display: flex;
-        width: 100%;
     }
 
     .formularioContacto {
