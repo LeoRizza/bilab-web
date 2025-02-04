@@ -21,6 +21,7 @@ body {
     position: sticky;
     top: 0;
     padding: 27px 5vw;
+    height: 12vh;
     z-index: 100;
 }
 
@@ -520,6 +521,11 @@ body {
 
 /* Equipo */
 
+.equipoCenter {
+    display: flex;
+    align-content: center;
+}
+
 .seccionEquipo {
     display: flex;
     justify-content: center;
@@ -965,15 +971,57 @@ body {
     display: none;
     background-color: transparent;
     border: none;
-    margin-top: 5vh;
+    margin-top: 1vh;
     width: 24px;
 }
+
+.footerMobile {
+    display: none;
+}
+
+.enlaceRedSocial1:hover {
+    color: #9747FF;
+    transform: scale(1.6);
+}
+
+.carouselMobile {
+    display: none;
+}
+
 /* Responsividad */
 @media (max-width: 990px) {
 
+    .redesFooter {
+        display: none;
+    }
+
+    .logoFooter {
+        display: none;
+    }
+
+    .footerMobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .redesContacto {
+        margin-bottom: 5vh;
+    }
+
+    .seccionDif {
+        margin-top: 5vh;
+    }
+
+    .tituloEquipoDiv {
+        margin-bottom: 5vh;
+    }
+
     .menuToggle2 {
-        display: block;
-        margin: 5vh auto;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        padding-right: 6vw;
     }
 
     .contactaNav {
@@ -1032,13 +1080,11 @@ body {
 
     .limenu {
         display: flex;
-        padding: 24px 48px;
+        padding: 12px;
         align-items: center;
         gap: 10px;
         align-self: stretch;
-        justify-content: left;
-        border-bottom: 1.5px solid var(--Primary-fello-Black, #282828);
-        background: var(--material-theme-sys-light-on-background, #1F1F1F);
+        justify-content: center;
         margin: 0;
     }
 
@@ -1051,17 +1097,15 @@ body {
         color: var(--material-theme-sys-light-on-primary, #FFF);
         text-align: center;
         font-family: Comfortaa;
-        font-size: 32px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: var(--font-size-5xl, 48px);
-        /* 150% */
         letter-spacing: var(--font-letter-spacing-normal, 0px);
     }
 
 
     .menuContainer.active {
-        height: 90vh;
+        height: fit-content;
         opacity: 1;
         overflow: visible;
         padding: 20px 0;
@@ -1117,6 +1161,10 @@ body {
         flex-direction: column;
     }
 
+    .carousel {
+        padding-bottom: 5vh;
+    }
+
     .serviciosLogos {
         display: none;
         z-index: 100;
@@ -1151,8 +1199,12 @@ body {
     }
 
     .bloqueServicios {
-        width: 92vw;
+        width: 55vw;
         height: 117px;
+    }
+
+    .carousel-indicators {
+        margin-top: 5vh;
     }
 
     .tituloPartners {
@@ -1179,6 +1231,11 @@ body {
         width: 100%;
     }
 
+    .miembroEquipo3 {
+        display: flex;
+        width: 100%;
+    }
+
     .formularioContacto {
         width: 92vw;
     }
@@ -1200,6 +1257,7 @@ body {
 
     .ContactoTitleDiv {
         font-size: 36px;
+        margin-bottom: 5vh;
     }
 
     .redesSection {
