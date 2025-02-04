@@ -83,3 +83,16 @@ window.addEventListener("load", () => {
         }
     });
 });
+
+
+/*scroll*/
+window.addEventListener("scroll", function () {
+    const navBar = document.querySelector(".barraNavegacion");
+
+    if (window.scrollY > 50) { 
+        navBar.style.backgroundColor = "black"; // Cambia a negro cuando el usuario baja
+        navBar.style.transition = "background-color 0.3s ease-in-out"; // Transición suave
+    } else {
+        navBar.style.backgroundColor = "transparent"; // Vuelve a transparente al volver arriba
+    }
+});

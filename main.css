@@ -5,13 +5,16 @@ body {
     padding: 0;
     background-color: #000;
     color: #fff;
+}
+
+html {
     overflow-x: hidden;
 }
 
-html, body {
-    overflow-x: hidden;
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
 }
-
 /*ANIMACIONEs*/
 
 .botonEnviar {
@@ -214,8 +217,7 @@ html, body {
 /* Encabezado */
 .encabezado {
     transition: all 0.3s ease-in-out;
-    position: sticky;
-    display: block;
+    
 }
 
 .barraNavegacion {
@@ -228,7 +230,7 @@ html, body {
     top: 0;
     padding: 27px 5vw;
     height: 12vh;
-    z-index: 1000;
+    z-index: 100;
 }
 
 @keyframes siguienteEfecto {
@@ -256,6 +258,7 @@ html, body {
     font-size: 28px;
     color: white;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 .menuContainer {
@@ -276,7 +279,7 @@ html, body {
     -webkit-text-fill-color: transparent;
 }
 
-.menu {
+.menu1 {
     display: flex;
     align-items: center;
 }
@@ -758,6 +761,7 @@ html, body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    z-index: 10;
     margin: 15vh 0;
     padding: 0 6vw;
 }
@@ -1356,7 +1360,7 @@ html, body {
         flex-direction: column;
     }
 
-    .menu {
+    .menu1 {
         flex-direction: column;
         justify-content: center;
         align-content: center;
