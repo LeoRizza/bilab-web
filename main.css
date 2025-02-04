@@ -231,11 +231,23 @@ html, body {
     z-index: 1000;
 }
 
-.barraNavegacion.scroll {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente al hacer scroll */
-    padding: 15px 5vw; /* Reduce padding al hacer scroll */
-    transition: all 0.3s ease-in-out;
+@keyframes siguienteEfecto {
+    0% {
+        transform: translateX(-50%) scale(3);
+    }
+    50% {
+        filter: brightness(1.2) blur(3px);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+        filter: brightness(1) blur(0);
+    }
 }
+
+.siguienteEfecto {
+    animation: siguienteEfecto 2s ease-out forwards;
+}
+
 
 .menuToggle {
     display: none;
@@ -1213,6 +1225,10 @@ html, body {
 
 /* Responsividad */
 @media (max-width: 990px) {
+
+    .eclipse3 {
+        display: none;
+    }
 
     .barraNavegacion {
         background-color: black;

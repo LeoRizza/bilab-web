@@ -72,13 +72,14 @@ window.addEventListener("load", () => {
     document.querySelector(".eclipse3").classList.add("animarAmanecer");
 });
 
-// queseyto//
+window.addEventListener("load", () => {
+    const eclipse = document.querySelector(".eclipse3");
 
-window.addEventListener("scroll", function() {
-    const header = document.querySelector(".barraNavegacion");
-    if (window.scrollY > 50) {
-        header.classList.add("scroll");
-    } else {
-        header.classList.remove("scroll");
-    }
+    eclipse.classList.add("animarAmanecer");
+
+    eclipse.addEventListener("animationend", (event) => {
+        if (event.animationName === "amanecer") {
+            eclipse.classList.add("siguienteEfecto"); // Agrega la nueva animación
+        }
+    });
 });
