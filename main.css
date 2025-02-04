@@ -7,10 +7,141 @@ body {
     color: #fff;
 }
 
+/*ANIMACIONEs*/
+.botonEnviar {
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.botonEnviar:hover {
+    background: #9747FF;
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.botonEnviar:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.botonEnviar::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.botonEnviar:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.btnCTA {
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.btnCTA:hover {
+    background: #9747FF;
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.btnCTA:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.btnCTA::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.btnCTA:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+
+
+
+
+/* CODIGO GRAL*/
 .cuerpoPagina {
     position: relative;
 }
-
 
 /* Encabezado */
 .barraNavegacion {
@@ -126,6 +257,7 @@ body {
 }
 
 .btnCTA {
+    position: relative;
     display: flex;
     font-family: "Comfortaa", serif;
     padding: 24px;
@@ -747,6 +879,7 @@ body {
 }
 
 .botonEnviar {
+    position: relative;
     border-radius: 50px;
     background: #DFD6B5;
     padding: 15px 30px;
@@ -929,9 +1062,7 @@ body {
 .eclipse2 {
     position: absolute;
     bottom: -20vw;
-    /* 🔥 Ajusta la altura del círculo */
     right: -50vw;
-    /* 🔥 Lo centra con respecto a la pantalla */
     width: 1100px;
     height: 1100px;
     border-radius: 50%;
@@ -984,8 +1115,32 @@ body {
     display: none;
 }
 
+.carrouselEquipo {
+    display: none;
+}
+
 /* Responsividad */
 @media (max-width: 990px) {
+
+    .nombreMiembro {
+        font-size: 20px;
+    }
+
+    .perfil {
+        width: 150px;
+        height: 150px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+
+    .descripcionMiembro {
+        font-size: 16px;
+    }
+
+    .carrouselEquipo {
+        display: block;
+    }
 
     .carouselMobile {
         display: flex;
@@ -1262,14 +1417,51 @@ body {
         width: auto;
     }
 
+    .tituloContacto {
+        font-size: 32px;
+    }
+
+    .servicioTitle {
+        font-size: 20px;
+    }
+
+    .servicioText {
+        font-size: 16px;
+        padding-bottom: 5vh;
+    }
+
+    .tituloPartners {
+        font-size: 32px;
+    }
+
+    .difH3 {
+        font-size: 20px;
+    }
+
+    .iconosText {
+        font-size: 16px;
+    }
+
+    .iconosText {
+        font-size: 16px;
+    }
+
     .tituloContacto2 {
-        font-size: 36px;
+        font-size: 32px;
         margin: 5vh 0 3vh 0;
     }
 
     .ContactoTitleDiv {
         font-size: 36px;
         margin-bottom: 5vh;
+    }
+
+    .faq-title {
+        font-size: 20px;
+    }
+
+    .derechosReservados {
+        font-size: 12px;
     }
 
     .redesSection {
