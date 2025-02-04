@@ -990,7 +990,17 @@ body {
     .carouselMobile {
         display: flex;
         width: 100vw;
-    }    
+    }
+
+    .carrouselEquipo {
+        width: 100%;
+    }
+
+    .cardMiembroEquipo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
     .miembroEquipo {
         width: 60vw;
