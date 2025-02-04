@@ -8,7 +8,7 @@ body {
 }
 
 html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 ul {
@@ -1131,6 +1131,14 @@ ul {
 
 /* eclipse */
 
+.eclipses {
+    position: absolute;
+    background-color: transparent;
+    width: inherit;
+    height: auto;
+    bottom: 0;
+}
+
 .eclipse1 {
     position: absolute;
     bottom: 10vw;
@@ -1142,7 +1150,7 @@ ul {
 .eclipse2 {
     position: absolute;
     bottom: -1vw;
-    right: -20vw;
+    right: -115vw;
     width: 50vw;
     height: 50vw;
     rotate: 180deg;
@@ -1153,8 +1161,8 @@ ul {
     bottom: -10vh; /* Empieza fuera de la pantalla */
     transform: translateY(-50%) scale(0.3); /* Reducida en tamaño */
     opacity: 0; /* Oculta inicialmente */
-    width: 80vw;
-    height: 80vw;
+    width: 50vw;
+    height: 50vw;
     /* animation: amanecer 3s ease-out forwards; */
     rotate: 270deg;
 }
