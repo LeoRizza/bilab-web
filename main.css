@@ -5,9 +5,15 @@ body {
     padding: 0;
     background-color: #000;
     color: #fff;
+    overflow-x: hidden;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 /*ANIMACIONEs*/
+
 .botonEnviar {
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
@@ -18,7 +24,7 @@ body {
 
 .botonEnviar:hover {
     background: #9747FF;
-    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    box-shadow: 0 0 30px 5px rgba(151, 71, 255, 0.815);
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -74,14 +80,14 @@ body {
 .btnCTA {
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 0.2s ease-in;
+/*  -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in; */
 }
 
 .btnCTA:hover {
     background: #9747FF;
-    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    box-shadow: 0 0 30px 5px rgba(151, 71, 255, 0.815);
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -134,7 +140,69 @@ body {
     transition: box-shadow 0.2s ease-in;
 }
 
+/*boton header*/
+.contactaNav {
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+/*  -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in; */
+}
 
+.contactaNav:hover {
+    background: #9747FF;
+    box-shadow: 0 0 30px 5px rgba(151, 71, 255, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.contactaNav:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.contactaNav::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.contactaNav:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
 
 
 
@@ -144,16 +212,29 @@ body {
 }
 
 /* Encabezado */
+.encabezado {
+    transition: all 0.3s ease-in-out;
+    position: sticky;
+    display: block;
+}
+
 .barraNavegacion {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    position: sticky;
+    background-color: transparent;
+    position: fixed;
     top: 0;
     padding: 27px 5vw;
     height: 12vh;
-    z-index: 100;
+    z-index: 1000;
+}
+
+.barraNavegacion.scroll {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente al hacer scroll */
+    padding: 15px 5vw; /* Reduce padding al hacer scroll */
+    transition: all 0.3s ease-in-out;
 }
 
 .menuToggle {
@@ -218,19 +299,21 @@ body {
 
 .bannerInicio {
     height: 100vh;
+    top: 0;
     position: relative;
     display: flex;
     justify-content: center;
-    top: 25vh;
+    overflow: hidden;
 }
 
 .bannerContent {
     display: flex;
-    width: 841px;
+    width: 50vw;
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    width: 50vw;
+    justify-content: center;
+    align-content: center;
 }
 
 .bannerLogo {
@@ -981,7 +1064,7 @@ body {
     align-items: center;
     padding: 25vh 4vw 15vh 4vw;
     position: relative;
-    width: inherit;
+    width: 100%;
 }
 
 .enlaceRedSocial1 {
@@ -1032,43 +1115,52 @@ body {
 
 /* eclipse */
 
-.eclipses {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-
-}
-
-.eclipsesDiv {
-    position: absolute;
-    height: 100%;
-    top: -25%;
-    pointer-events: none;
-}
-
 .eclipse1 {
     position: absolute;
-    bottom: 8vw;
-    left: -18vw;
-    width: 1100px;
-    height: 1100px;
-    border-radius: 50%;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(145, 90, 255, 0.40) 10%, rgba(255, 255, 255, 0.00));
+    bottom: 10vw;
+    left: -20vw;
+    width: 50vw;
+    height: 50vw;
 }
 
 .eclipse2 {
     position: absolute;
-    bottom: -20vw;
-    right: -50vw;
-    width: 1100px;
-    height: 1100px;
-    border-radius: 50%;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(145, 90, 255, 0.40) 10%, rgba(255, 255, 255, 0.00));
-    transform: translate(50%, 0);
+    bottom: -1vw;
+    right: -20vw;
+    width: 50vw;
+    height: 50vw;
+    rotate: 180deg;
+}
 
+.eclipse3 {
+    position: absolute;
+    bottom: -10vh; /* Empieza fuera de la pantalla */
+    transform: translateY(-50%) scale(0.3); /* Reducida en tamaño */
+    opacity: 0; /* Oculta inicialmente */
+    width: 80vw;
+    height: 80vw;
+    /* animation: amanecer 3s ease-out forwards; */
+    rotate: 270deg;
+}
+
+.animarAmanecer {
+    animation: amanecer 3s ease-out forwards;
+}
+
+@keyframes amanecer {
+    0% {
+        bottom: -50vh;
+        transform: translateX(-50%) scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 0;
+        transform: translateX(-50%) scale(3);
+        opacity: 1;
+    }
 }
 
 .derechos {
@@ -1121,6 +1213,10 @@ body {
 
 /* Responsividad */
 @media (max-width: 990px) {
+
+    .barraNavegacion {
+        background-color: black;
+    }
 
     .nombreMiembro {
         font-size: 20px;
@@ -1234,7 +1330,7 @@ body {
         top: 60px;
         right: 0;
         width: 100%;
-        background: black;
+        background: transparent;
         text-align: center;
         padding: 20px 0;
         opacity: 0;
@@ -1307,7 +1403,7 @@ body {
         flex-direction: column;
     }
 
-    .eclipsesDiv {
+    .eclipse1, .eclipse2 {
         display: none;
     }
 

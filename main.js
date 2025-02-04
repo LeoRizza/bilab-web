@@ -64,3 +64,21 @@ menuToggle2.addEventListener("click", () => {
     menuContainer.classList.remove("active");
     menuToggle.style.display = "block";  // 🔥 Muestra el botón de abrir
 });
+
+
+//amanecer
+
+window.addEventListener("load", () => {
+    document.querySelector(".eclipse3").classList.add("animarAmanecer");
+});
+
+// queseyto//
+
+window.addEventListener("scroll", function() {
+    const header = document.querySelector(".barraNavegacion");
+    if (window.scrollY > 50) {
+        header.classList.add("scroll");
+    } else {
+        header.classList.remove("scroll");
+    }
+});
