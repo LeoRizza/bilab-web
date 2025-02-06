@@ -310,6 +310,7 @@ ul {
     background: #DFD6B5;
     color: #000;
     text-decoration: none;
+    position: relative;
 }
 
 .bannerInicio {
@@ -837,6 +838,7 @@ ul {
     height: 190px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: 0px 0px;
 }
 
 .nombreMiembro {
@@ -1165,6 +1167,7 @@ ul {
     height: 50vw;
     /* animation: amanecer 3s ease-out forwards; */
     rotate: 270deg;
+    z-index: -10;
 }
 
 .animarAmanecer {
@@ -1468,7 +1471,6 @@ ul {
 
     .serviciosLogos {
         display: none;
-        z-index: 100;
         justify-content: center;
     }
 
