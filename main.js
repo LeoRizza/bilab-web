@@ -33,22 +33,6 @@ faqItems.forEach(item => {
 
 const textarea = document.getElementById('mensaje');
 
-// Evento para ajustar la altura automáticamente
-/* textarea.addEventListener('inputMensaje', function () {
-    this.style.height = 'auto'; // Restablece la altura para recalcular
-    this.style.height = this.scrollHeight + 'px'; // Ajusta la altura al contenido
-}); */
-
-
-// 🔹 hamburgesa
-/* const menuToggle = document.querySelector(".menuToggle");
-const menuContainer = document.querySelector(".menuContainer");
-
-menuToggle.addEventListener("click", () => {
-    menuContainer.classList.toggle("active");
-});
- */
-
 const menuToggle = document.querySelector(".menuToggle");
 const menuToggle2 = document.querySelector(".menuToggle2");
 const menuContainer = document.querySelector(".menuContainer");
@@ -86,13 +70,26 @@ window.addEventListener("load", () => {
 
 
 /*scroll*/
-window.addEventListener("scroll", function () {
+let lastScrollY = 0;
+let ticking = false;
+
+function updateNavbar() {
     const navBar = document.querySelector(".barraNavegacion");
 
-    if (window.scrollY > 50) { 
+    if (lastScrollY > 50) { 
         navBar.style.backgroundColor = "black"; // Cambia a negro cuando el usuario baja
-        navBar.style.transition = "background-color 0.3s ease-in-out"; // Transición suave
     } else {
         navBar.style.backgroundColor = "transparent"; // Vuelve a transparente al volver arriba
+    }
+
+    ticking = false; // Permite nuevas ejecuciones
+}
+
+window.addEventListener("scroll", () => {
+    lastScrollY = window.scrollY;
+
+    if (!ticking) {
+        requestAnimationFrame(updateNavbar);
+        ticking = true;
     }
 });
