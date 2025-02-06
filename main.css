@@ -512,7 +512,6 @@ ul {
 .bloqueServicios1,
 .bloqueServicios2,
 .bloqueServicios3 {
-
     border-radius: 24px;
     display: flex;
     height: 117px;
@@ -523,6 +522,20 @@ ul {
     align-items: center;
     gap: 10px;
     align-self: stretch;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.bloqueServicios1:hover {
+    transform: scale(1.2);
+}
+
+.bloqueServicios2:hover {
+    transform: scale(1.2);
+}
+
+.bloqueServicios3:hover {
+    transform: scale(1.2);
 }
 
 .contenedorBloqueDerecho {
