@@ -15,6 +15,10 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 }
+
+section {
+    scroll-margin-top: 12vh; /* Ajusta según la altura del navbar */
+}
 /*ANIMACIONEs*/
 
 .botonEnviar {
