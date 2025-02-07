@@ -1406,14 +1406,20 @@ section {
 
     .imagenSocio2 {
         display: flex;
-        justify-content: center;
-        width: 100%;
+        height: 150px;
+    }
+
+    .herramientasItem{
+        text-align: center;
+    }
+
+    .herramientasDiv {
+        display: none;
     }
 
     /*HEADER*/
     .menuToggle {
         display: block;
-        /* Muestra el botón hamburguesa */
     }
 
     .menuContainer {
@@ -1421,7 +1427,7 @@ section {
         top: 60px;
         right: 0;
         width: 100%;
-        background: black;
+        background: #000000;
         text-align: center;
         padding: 20px 0;
         opacity: 0;

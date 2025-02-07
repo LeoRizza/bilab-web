@@ -94,4 +94,34 @@ window.addEventListener("scroll", () => {
     }
 });
 
+/* MAIL */
+document.getElementById("contactForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const formData = {
+        nombre: document.getElementById("nombre").value,
+        empresa: document.getElementById("empresa").value,
+        email: document.getElementById("email").value,
+        telefono: document.getElementById("telefono").value,
+        mensaje: document.getElementById("mensaje").value,
+    };
+
+    try {
+        const response = await fetch("https://bilab-mailing.vercel.app/api/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+            alert("¡Correo enviado con éxito!");
+            document.getElementById("contactForm").reset();
+        } else {
+            alert("Hubo un error al enviar el correo.");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Error en la conexión con el servidor.");
+    }
+});
 
