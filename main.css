@@ -485,7 +485,7 @@ ul {
     font-family: "Quicksand", serif;
     text-align: left;
     color: #FFF;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: -0.16px;
@@ -1107,11 +1107,13 @@ ul {
 .enlaceRedSocial2 img {
     height: 35px;
     margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
 .enlaceRedSocial1 img {
     width: auto;
     height: auto;
+    transition: transform 0.3s ease;
 }
 
 .logoFooter {
@@ -1135,6 +1137,7 @@ ul {
     color: #a68eff;
     margin: 0 10px;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
 .redesContacto {
@@ -1239,12 +1242,17 @@ ul {
     display: none;
 }
 
-.enlaceRedSocial1:hover {
+.enlaceRedSocial1 img:hover {
     color: #9747FF;
     transform: scale(1.6);
 }
 
-.enlaceRedSocial:hover {
+.enlaceRedSocial2 img:hover{
+    color: #E2BEF0;
+    transform: scale(1.6);
+}
+
+.enlaceRedSocial img:hover {
     color: #E2BEF0;
     transform: scale(1.3);
 }
@@ -1346,7 +1354,8 @@ ul {
     }
 
     .tituloEquipoDiv {
-        margin-bottom: 5vh;
+        margin: 2vh auto;
+
     }
 
     .menuToggle2 {
@@ -1426,15 +1435,23 @@ ul {
 
 
     .limenu a {
-        color: var(--material-theme-sys-light-on-primary, #FFF);
+        color: #ffffff;
         text-align: center;
-        font-family: Comfortaa;
+        font-family: "Comfortaa", serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        letter-spacing: var(--font-letter-spacing-normal, 0px);
+        letter-spacing: 0px;
     }
 
+    .tituloDiv {
+        margin-bottom: 4vh;
+    }
+
+    .iconosText {
+        height: auto;
+        margin-bottom: 4vh;
+    }
 
     .menuContainer.active {
         height: fit-content;
@@ -1506,11 +1523,13 @@ ul {
         position: relative;
         top: 0;
         width: fit-content;
+        margin-bottom: 20px;
     }
 
     .servicios {
         flex-direction: column;
         margin-top: 5vh;
+        align-items: center;
     }
 
     .serviciosContent {
@@ -1582,6 +1601,11 @@ ul {
     .servicioText {
         font-size: 16px;
         padding-bottom: 5vh;
+        padding-bottom: 2vh;
+    }
+
+    .seccionSocios {
+        margin-top: 2vh;
     }
 
     .tituloPartners {
